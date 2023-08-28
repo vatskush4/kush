@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+body {
+    overflow: hidden;
+    /* background-image: url("https://img.freepik.com/premium-photo/woman-writing-working-laptop-business-copy-space-background_67155-1899.jpg?w=360");
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    justify-content: space-between;
+    z-index: 111;
+
+}
+
+.logo {
+    display: flex;
+    font-size: 31px;
+    font-weight: 800;
+    position: relative;
+    color: #bd68e8;
+    letter-spacing: 3px;
+    right: -30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 6px;
+    text-decoration:none ;
+
+}
+
+.navitems {
+    display: flex;
+
+
+}
+
+.navitems li {
+    display: flex;
+    list-style: none;
+    margin: 0 20px;
+}
+
+.navitems li a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #3d535f;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navitems li:hover a,
+.links a:hover {
+    color: blueviolet;
+}
+
+.links a {
+    position: relative;
+    font-size: 30px;
+    color: #3d535f;
+    margin: 25px 10px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.wrapper::before {
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: object1 4s linear infinite;
+}
+
+.wrapper::after {
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: object2 4s linear infinite;
+}
+
+@keyframes object1 {
+    50% {
+        left: -13%;
+        top: 41%;
+    }
+}
+
+@keyframes object2 {
+    50% {
+        left: 35%;
+        top: 10%;
+    }
+}
+
+
+.cols0 {
+    width: 100%;
+
+}
+
+.cols0 {
+    z-index: 5;
+}
+
+.topline {
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3d535f;
+}
+
+.topline::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #7f00ff;
+}
+
+h1 {
+    display: block;
+    font-size: 3em;
+    font-weight: 900;
+    color: #3d535f;
+}
+
+.multitext {
+    color: #7f00ff;
+    text-transform: capitalize;
+    
+}
+
+p {
+    display: block;
+    text-transform: capitalize;
+    font-size: 1em;
+    color: #3d535f;
+    font-weight: 700;
+}
+
+.btns {
+    width: 100%;
+    position: relative;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    color: aliceblue;
+    background-color: #3d535f;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgb(0, 0, 0, 0.4);
+}
+button a{
+    color: aliceblue;
+}
+
+button:hover {
+    background-color: #7f00ff;
+}
+
+.imgbox {
+    position: relative;
+    width: 88%;
+    height: 100%;
+}
+
+
+.imgbox img {
+    position: relative;
+    height: 100%;
+    width: calc(130% - 80px);
+    top: -56px;
+    right: 97px;
+    /* border: 2px solid black; */
+    border-radius: 2px solid pink;
+    /* animation: animateuser 5s  linear infinite; */
+}
+/* #hum{
+    border: 4px solid rgb(203, 97, 227);
+    border-radius: 500px;
+    top: -40px;
+    right: 71px;
+    box-shadow: #3d535f;
+} */
+
+.imgbox #splash {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    /* top: -100px; */
+    right: 50px;
+    width: 48vw;
+    height: 810px;
+    filter: saturate(200%);
+
+    /* animation: animate 10s linear infinite; */
+}

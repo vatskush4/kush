@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="http://127.0.0.1:5501/logo.png">
+    <link href="Portfolio_files/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Portfolio_files/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <nav>
+            <div class="logo"> <i>Personal Portfolio</i> </div>
+            <ul class="navitems">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Contact me</a></li>
+                <li><a href="#">My Skills</a></li>
+            </ul>
+            
+            <div class="abc">
+            <div class="links">
+                <a href="https://www.instagram.com/_ashishhh_03/"><i class="bx bxl-instagram-alt"></i></a>
+                <a href=""><i class="bx bxl-facebook-circle"></i></a>
+                <a href=""><i class="bx bxl-whatsapp"></i></a>
+            </div>
+        </div>
+        </nav>
+
+        <div class="wrapper">
+            <div class="cols0">
+                <span class="topline">Hello</span>
+                <h1>I'm <span class="multitext">of Web </span><span class="typed-cursor" aria-hidden="true">|</span></h1>
+                <p>My name is Jhon.I am Btech 1st year student.This is my personal portfolio <br>
+                Languages known: HTML,Css,JAVASCRIPT,python</p>
+                <div class="btns">
+                    <button><a href="">My Info</a></button>
+                    <button>My Skills</button>
+                </div>
+            </div>
+            <div class="cols1">
+                <div class="imgbox">
+                    <img src="Portfolio_files/splash.png" id="splash">
+                <div class="abc"><img src="Portfolio_files/img.png" id="hum"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+   
+
+ <script src="Portfolio_files/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multitext",{
+            strings : ["Jhon", " Student"," of Web Development"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500
+        })
+    </script><style type="text/css" data-typed-js-css="true">
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+      </style>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
